@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimingActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrival Time:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnArrivalTime"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0FD117"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Park Duration:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/edtParkDuration"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="00:00:00"
+        android:textSize="30sp"
+        android:background="#0FD117"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="time"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvHalfTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send a reminder at half-time?      "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvBeforeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send a reminder before the end? "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLetsGo"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Let`s Go!"
+        android:textSize="30sp"
+        android:background="@drawable/button_shape"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MinorProject</string>
+    <string name="title_activity_park_map">ParkMapActivity</string>
+    <string name="title_activity_end_map">EndMapActivity</string>
+</resources>
